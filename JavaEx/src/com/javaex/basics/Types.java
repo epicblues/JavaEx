@@ -5,11 +5,35 @@ package com.javaex.basics;
 public class Types {
 	
 	public static void main(String[] args) {
-		varEx();
-		
+//		varEx();
+		integerEx();
 	}
-	
-// 변수의 선언과 사용
+
+	// 정수형 데이터 타입
+	private static void integerEx() {
+		
+		// byte(1)<short(2)<int(4)<long(8)
+		int intVar1, intVar2; // 선언
+		
+		intVar1=2021; // 초기화
+		//intVar2=1234567890123;   out of range : 저장범위 초과
+		System.out.println(Integer.toBinaryString(intVar1));
+		
+		long longVar1, longVar2;
+		longVar1 = 2021;
+		longVar2 = 1234567890123L;
+		System.out.println(Long.toBinaryString(longVar2));
+		
+		int bin, oct, hex;
+		bin = 0b1101; // 2진수 0b 접두어
+		oct = 072; // 8진수 0 접두어
+		hex = 0xFF; // 16진수 0x 접두어
+		
+		System.out.println(bin + "," + oct + "," + hex);
+	}
+		
+		
+	// 변수의 선언과 사용
 	private static void varEx() {
 		/* 변수의 식별자 규칙
 		 * 1.문자, 숫자, $, _ 사용할 수 있다.
@@ -30,7 +54,7 @@ public class Types {
 		
 		// 여러 변수에 동일한 값을 할당하고자 할 때
 		v1 = v2 = v3 = 40; // 뒤에서 부터 실행된다고 보면 된다? 40을 먼저 v3에 대입 ...
-		
+	
 		
 
 	}
