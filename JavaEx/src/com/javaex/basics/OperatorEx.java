@@ -5,8 +5,46 @@ public class OperatorEx {
 	public static void main(String[] args) {
 //		arithOperEx(); 
 //		logicOperEx();
-		bitOperEx();
+//		bitOperEx();
+//		bitShiftOperEx();
+		conditionalOperEx();
 	}
+	// 3항 연산자
+	
+	public static void conditionalOperEx( ) {
+		// 문법이 조건식 ? 참일때의 값 또는 식 : 거짓일 때의 값 또는 식
+		int a = 9;
+		
+		String result;
+		
+		// a가 짝수이면 "짝수", 홀수면 "홀수" 출력
+		result = (a % 2 == 0) ? "짝수" : "홀수";
+		System.out.println("a는 " + result);
+		
+		int score = 60;
+		// 만약에 score >= 80 -> Good
+		// 만약에 score >= 50 -> Pass
+		// 50점 미만 -> Fail
+		
+		result = score>=80 ? "Good" : score>=50 ? "Pass" : "Fail";
+		System.out.println("Score: " + score + " result: " +result);
+	}
+	// 비트 시프트 연산자
+	private static void bitShiftOperEx() {
+		// 비트 단위로 이동.
+		int val = 1;
+		// 왼쪽 시프트 <<
+		System.out.println(val);
+		System.out.println(Integer.toBinaryString(val <<5));
+		System.out.println(Integer.toBinaryString(val <<2));
+		
+		// 우측 시프트 >>
+		val = -2021;
+		System.out.println(Integer.toBinaryString(val));
+		System.out.println(Integer.toBinaryString(val >> 5)); // MSB 유지
+		System.out.println(Integer.toBinaryString(val >>> 5));
+	}
+	
 	
 	// 비트 연산자
 	private static void bitOperEx()  {
@@ -14,6 +52,7 @@ public class OperatorEx {
 		// 미세하게 비트 단위 데이터 제어에 활용.
 		byte b1 = 0b1101;
 		byte b2 = 0b0111;
+		
 		
 		System.out.println("b1 : " + Integer.toBinaryString(b1));
 		System.out.println("b2 : " + Integer.toBinaryString(b2));
