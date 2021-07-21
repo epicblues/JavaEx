@@ -39,12 +39,14 @@ public class ArrayEx {
 		}
 		
 		// 배열은 참조 타입이다.
+		// 참조 복사 : 객체를 복사한 것이 아니라 주소만 복사
 		int scores2[] = scores;
 		
 		System.out.println("scores: " + Arrays.toString(scores));
 		System.out.println("scores2: " + Arrays.toString(scores2));
 		
-		scores[2] = 0;
+		scores[2] = 0; // 참조 복사 : 객체를 복사한 것이 아니라 주소만 복사
+						// 같은 배열 참조
 		
 		System.out.println("scores: " + Arrays.toString(scores));
 		System.out.println("scores2: " + Arrays.toString(scores2));
