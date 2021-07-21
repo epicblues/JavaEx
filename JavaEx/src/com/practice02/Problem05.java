@@ -22,6 +22,7 @@ public class Problem05 {
 				count++;
 			}
 		}
+		
 		float average = (float)(sum / count);
 		System.out.printf("합계 : %d%n평균 : %.1f", sum,average);
 	}
