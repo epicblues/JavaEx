@@ -1,6 +1,10 @@
 package com.javaex.basics;
 
+import java.time.DayOfWeek;
+import java.util.Calendar;
 import java.util.Scanner;
+
+
 
 public class ConditionalEx {
 
@@ -11,10 +15,11 @@ public class ConditionalEx {
 //		switchEx2();
 //		conditionalPractice01();
 //		conditionalPractice02();
-		switchEx3("SUNDAY");
+		DayOfWeek day = DayOfWeek.SUNDAY;
+		switchEx3(day);
 	}
 	
-	private static void switchEx3(String day) {
+	private static void switchEx3(DayOfWeek day) {
 		// day가 SUNDAY -> 휴식
 		// day가 MONDAY ~ THURSDAY -> 열공
 		// FRIDAY -> 열공 후 불금
@@ -23,20 +28,20 @@ public class ConditionalEx {
 		
 		// TODO : 이 코드는 나중에 enum 타입으로 개선해 볼 예정.
 		String act;
-		switch (day) {
-		case "SUNDAY":
+		switch (day.ordinal()) {
+		case 0:
 			act = "휴식";
 			break;
-		case "MONDAY":
-		case "TUESDAY":
-		case "WEDNESDAY":
-		case "THURSDAY":
+		case 1:
+		case 2:
+		case 3:
+		case 4:
 			act= "열공";
 			break;
-		case "FRIDAY":
+		case 5:
 			act = "열공 후 불금";
 			break;
-		case "SATURDAY":
+		case 6:
 			act = "주말";
 			break;
 		default:
