@@ -5,9 +5,100 @@ import java.util.Arrays;
 public class ArrayEx {
 
 	public static void main(String[] args) {
-		defineArray();
+//		defineArray();
+//		multiDimArray();
+		arrayCopyFor();
+//		arrayCopySystem();
 	}
-
+	
+	private static void arrayCopySystem() {
+		int[] source = {1,2,3};
+		int[] target = new int[10];
+		System.arraycopy(source,
+				0, // 복사 시작 인덱스
+				target, // 복사 대상 배열
+				3, // 대상 배열의 복사 시작 인덱스
+				2); // 복사할 길이
+		for(int i=0; i<source.length;i++) {
+			System.out.println(source[i] + "\t");
+		}
+		
+		System.out.println();
+		
+		for (int i=0; i<target.length;i++) {
+			System.out.println(target[i] + "\t");
+		}
+		
+		System.out.println();
+		
+		
+		
+	}
+	
+	
+	private static void arrayCopyFor() {
+		// 배열은 크기 변경이 불가능하다
+		// 새 배열을 생성 복사
+		int[] source = {1,2,3};
+		int[] target = new int[10];
+		
+		for(int i=0; i<source.length;i++) {
+			target[i] = source[i];
+		}
+		
+		// 소스 배열 출력
+		for(int i=0; i<source.length;i++) {
+			System.out.println(source[i] + "\t");
+		}
+		
+		System.out.println();
+		// 복제 배열 출력
+		for (int i=0; i<target.length;i++) {
+			System.out.println(target[i] + "\t");
+		}
+		System.out.println();
+		
+		// Enhanced For
+		
+		for (int value : source) {
+			System.out.println(value + "\t");
+		}
+		
+		for (int value : target) {
+			System.out.println(value + "\t");
+		}
+	}
+	
+	
+	private static void multiDimArray() {
+		// 2차원 배열의 선언
+		int[][] twoDim = new int[5][10];  // 10개 배열이 5행 연결된 구조
+		
+		int table[][] = {
+				{1,2,3,4,5,6,7,8,9,0}, // 0행
+				{2,3,4,5,6,7,8,9,0,1}, // 1행
+				{3,4,5,6,7,8,9,0,1,2}, // 2행
+				{4,5,6,7,8,9,0,1,2,3},
+				{5,6,7,8,9,0,1,2,3,4}
+		}; // 5행 10열의 배열.
+		
+		System.out.println("table.length: " + table.length);
+		// table 인덱스 범위 : 0~ table.length - 1
+		System.out.println("table[2].length: " + table[2].length);
+		
+		// 루프를 돌려서 내부 요소의 총합을 구해보자.
+		int total = 0;
+		for (int i = 0; i<table.length;i++) {
+			// 행루프
+			for(int j = 0; j < table[i].length; j++) {
+				// 열루프
+				total += table[i][j];
+			}
+		}
+		
+		System.out.println("총합: " + total);
+	}
+	
 	private static void defineArray() {
 		// 선언
 		String[] names; // 타입[] 식별자
