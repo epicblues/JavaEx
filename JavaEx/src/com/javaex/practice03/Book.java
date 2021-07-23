@@ -1,4 +1,4 @@
-package com.javaex.problem04;
+package com.javaex.practice03;
 
 public class Book {
     private int bookNo;

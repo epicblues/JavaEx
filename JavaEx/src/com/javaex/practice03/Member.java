@@ -1,4 +1,4 @@
-package com.javaex.problem01;
+package com.javaex.practice03;
 
 public class Member {
 	private String id;

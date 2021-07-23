@@ -1,4 +1,5 @@
 package com.practice01;
+
 import java.util.Scanner;
 
 public class Problem05 {

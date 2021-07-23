@@ -1,4 +1,4 @@
-package com.javaex.problem04;
+package com.javaex.practice03;
 
 import java.util.Scanner;
 
@@ -39,4 +39,6 @@ public class BookShop {
         	books[i].print();
         }
     }
+    
+    
 }

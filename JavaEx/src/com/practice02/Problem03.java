@@ -20,9 +20,6 @@ public class Problem03 {
 			System.out.print(ch);
 		}
 		
-		
-		
-		
 		scan.close();
 
 	}
