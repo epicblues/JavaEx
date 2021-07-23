@@ -11,7 +11,26 @@ public class SongApp {
 		s1.setYear(2010);
 		s1.setTrack(3);
 		s1.showInfo();
-
+		
+		Song s2 = new Song();
+		
+		s2.setTitle("거짓말");
+		s2.setArtist("BIGBANG");
+		s2.setAlbum("Always");
+		s2.setComposer("G-DRAGON");
+		s2.setYear(2007);
+		s2.setTrack(2);
+		s2.showInfo();
+		
+		Song s3 = new Song();
+		
+		s3.setTitle("벚꽃엔딩");
+		s3.setArtist("버스커버스커");
+		s3.setAlbum("버스커버스커1집");
+		s3.setComposer("장범준");
+		s3.setYear(2012);
+		s3.setTrack(4);
+		s3.showInfo();
 	}
 
 }

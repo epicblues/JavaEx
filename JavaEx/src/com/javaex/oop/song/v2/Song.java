@@ -59,6 +59,6 @@ public class Song {
 	}
 	
 	public void showInfo() {
-		System.out.printf("%s, %s (%s, %d, %d번 track, %s 작곡)",artist,title,album,year,track,composer);
+		System.out.printf("%s, %s (%s, %d, %d번 track, %s 작곡)%n",artist,title,album,year,track,composer);
 	}
 }

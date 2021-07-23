@@ -3,7 +3,7 @@ package com.javaex.oop.goods.v4;
 
 //  v4. this
 //  객체 자신을 의미, this() 내부의 다른 생성자를 의미.
-public class Goods {
+public  class Goods {
 	// 필드 선언
 	
 	private String name;
