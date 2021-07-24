@@ -8,6 +8,15 @@ public class PhoneApp {
 		tp.turnOn(false);
 		tp.call("0102-234234");
 
+		
+		Phone tp2 = new SmartPhone("010-4544-5216");
+		tp2.turnOn(true);
+		tp2.turnOn(false);
+		tp2.turnOn(true);
+		tp2.call("0102-234234");
+		if(tp2 instanceof SmartPhone) {
+			((SmartPhone)tp2).searchInternet("http://naver.com");
+		}
 	}
 
 }

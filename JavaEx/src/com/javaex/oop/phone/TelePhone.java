@@ -16,7 +16,7 @@ public class TelePhone extends Phone {
 	@Override
 	public void call(String number) {
 		if(power) {
-		System.out.println("Telephone으로" +number + "에게 전화를 겁니다.");
+		System.out.println("Telephone으로 " +number + "에게 전화를 겁니다.");
 		} else {
 			System.out.println("전원을 키셔야 합니다.");
 		}
