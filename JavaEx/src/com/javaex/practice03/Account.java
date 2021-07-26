@@ -29,11 +29,16 @@ public class Account {
 	}
 
 	public void deposit(int money) {
+		
 		balance += money;
 		
 	}
 
 	public void withdraw(int money) {
+		if (money > balance) {
+			System.out.println("예금이 부족합니다.");
+			return;
+		}
 		balance -= money;
 		
 	}

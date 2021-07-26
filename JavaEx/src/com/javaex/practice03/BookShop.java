@@ -35,8 +35,8 @@ public class BookShop {
 
     //(2)전달받은 배열을 모두 출력하는 메소드
     private static void displayBookInfo(Book[] books) {
-        for (int i =0; i<books.length;i++) {
-        	books[i].print();
+        for (Book book : books) {
+        	book.print();
         }
     }
     
