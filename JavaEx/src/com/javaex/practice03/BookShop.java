@@ -22,7 +22,7 @@ public class BookShop {
         displayBookInfo(books);
         
         Scanner scanner = new Scanner(System.in);
-        System.out.print("대여 하고 싶은 책의 번호를 입력하세요:");
+        System.out.print("대여 하고 싶은 책의 번호를 입력하세요: ");
         int num = scanner.nextInt();
         scanner.close();
         books[num - 1].rent();

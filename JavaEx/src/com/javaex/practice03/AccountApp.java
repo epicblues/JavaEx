@@ -46,7 +46,7 @@ public class AccountApp {
                     break;
                     
                 default :
-                    System.out.println("다시입력해주세요");
+                    System.out.println("다시 입력해주세요");
                     break;
                     
             }//switch 
