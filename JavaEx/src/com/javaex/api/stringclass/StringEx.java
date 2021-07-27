@@ -9,6 +9,8 @@ public class StringEx {
 
 	}
 
+	
+	
 	private static void stringBufferEx() {
 		// String 객체는 불변자료(immutable)
 		// StringBuffer 객체는 버퍼 기반의 가변 자료형.
