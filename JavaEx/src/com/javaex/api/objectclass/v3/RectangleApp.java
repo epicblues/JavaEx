@@ -1,4 +1,4 @@
-package com.javaex.api.objectpractice;
+package com.javaex.api.objectclass.v3;
 
 public class RectangleApp {
 
@@ -8,6 +8,8 @@ public class RectangleApp {
 		Rectangle c = new Rectangle(3,3);
 		Rectangle d = c;
 		
+		
+		System.out.println(a);
 		System.out.println(a.equals(b));
 		System.out.println(a.equals(c));
 		System.out.println(a.equals(d));

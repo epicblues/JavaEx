@@ -1,4 +1,4 @@
-package com.javaex.api.objectpractice;
+package com.javaex.api.objectclass.v3;
 
 public class CircleApp {
 

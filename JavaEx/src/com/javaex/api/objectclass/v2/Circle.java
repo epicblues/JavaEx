@@ -1,4 +1,4 @@
-package com.javaex.api.objectpractice;
+package com.javaex.api.objectclass.v2;
 
 public class Circle {
 	private int x;
@@ -22,6 +22,15 @@ public class Circle {
 			Circle other = (Circle)obj;
 			return radius == other.radius ? true : false;
 		}
-		return false;
+		return super.equals(obj);
 	}
+
+
+
+	@Override
+	public String toString() {
+		return "Circle [x=" + x + ", y=" + y + ", radius=" + radius + "]";
+	}
+	
+	
 }
