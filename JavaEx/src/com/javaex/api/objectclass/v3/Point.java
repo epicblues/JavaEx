@@ -33,6 +33,18 @@ public class Point implements Cloneable{
 
 	}
 	
+	public Point getClone() {
+		Point clone = null;
+		
+		try {
+			clone = (Point)clone(); // clone() 메서드는 checked 예외.
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+		}
+		
+		return clone;
+	}
+	
 	
 	
 }

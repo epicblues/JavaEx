@@ -1,8 +1,8 @@
 package com.javaex.api.objectclass.v3;
 
-public class Rectangle {
-	private int width;
-	private int height;
+public class Rectangle implements Cloneable {
+	 int width;
+	 int height;
 
 	public Rectangle(int width, int height) {
 		super();
@@ -24,6 +24,18 @@ public class Rectangle {
 	@Override
 	public String toString() {
 		return "Rectangle [width=" + width + ", height=" + height + "]";
+	}
+	
+	public Rectangle getClone()  {
+		Rectangle clone = null;
+		
+		try {
+			clone = (Rectangle)clone();
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+		}
+		
+		return clone;
 	}
 	
 	
