@@ -9,8 +9,8 @@ public class DateCalEx {
 
 	public static void main(String[] args) {
 		
-//		dateEx();
-		calendarEx();
+		dateEx();
+//		calendarEx();
 		
 
 	}
@@ -27,7 +27,7 @@ public class DateCalEx {
 		df = DateFormat.getDateInstance(DateFormat.LONG);
 		System.out.println("LONG : " + df.format(now));
 		
-		// TODO: DateFormat을 MEDIUM, SHORT로 바꿔서 출력해보기.
+
 		df = DateFormat.getDateInstance(DateFormat.MEDIUM);
 		System.out.println("MEDIUM : " + df.format(now));
 		df = DateFormat.getDateInstance(DateFormat.SHORT);
@@ -39,7 +39,7 @@ public class DateCalEx {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 		System.out.println("SHORT : " + sdf.format(now));
 		// TODO: Time Format을 바꿔 가며 출력 확인.
-		sdf = new SimpleDateFormat("a HH:mm:ss");
+		sdf = new SimpleDateFormat("a hh:mm:ss");
 		System.out.println("SHORT : " + sdf.format(now));
 	}
 	
@@ -49,7 +49,7 @@ public class DateCalEx {
 		Calendar custom = Calendar.getInstance();
 		// 주의 : 워러 정보는 0부터
 		custom.set(1999, 11,31); // 1999년 12월 31일
-		
+		custom.set(Calendar.DATE, 23);
 		System.out.println("현재 : " + now);
 		System.out.println("사용자 정의 : " + custom);
 		
