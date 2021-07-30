@@ -21,7 +21,7 @@ public class FileStreamEx {
 			}
 
 			System.out.println("파일을 복사했습니다!");
-			os.flush();
+			
 
 		} catch (FileNotFoundException e) {
 			System.err.println("찾을 수 없습니다");
