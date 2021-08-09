@@ -24,7 +24,7 @@ public class SelectTest {
 			rs = st.executeQuery("SELECT department_id, department_name from departments");
 			System.out.println(rs);
 			while (rs.next()) {
-				System.out.printf("%d:%s%n", rs.getInt(1), rs.getString(2));
+				System.out.printf("%d:%s%n", rs.getInt(1), rs.getString("DEPARTMENT_NAME"));
 			}
 		} 
 //			catch (ClassNotFoundException e) {
