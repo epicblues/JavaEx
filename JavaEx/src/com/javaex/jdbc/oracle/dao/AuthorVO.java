@@ -45,7 +45,8 @@ public class AuthorVO {
 	}
 
 	public String getAuthorDesc() {
-		return authorDesc;
+		
+		return authorDesc == null? "" : authorDesc;
 	}
 
 	public void setAuthorDesc(String authorDesc) {
