@@ -15,7 +15,14 @@ public class HRSalary {
 		int minSal =Integer.parseInt(st1.nextToken());
 		int maxSal =Integer.parseInt(st1.nextToken());
 		
+		if(minSal > maxSal) {
+			int temp;
+			temp = minSal;
+			minSal = maxSal;
+			maxSal = temp;
+		}
 		System.out.println("=======================================================");
+		
 		
 		
 		
