@@ -1,6 +1,15 @@
 package com.javaex.thread;
 
 public class DigitThread extends Thread {
+	
+	public DigitThread() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public DigitThread(String string) {
+		super(string);
+	}
+
 	@Override
 	public void run() {
 		// 스레드의 실행 로직

@@ -5,8 +5,8 @@ public class MainThread {
 	public static void main(String[] args) {
 		// Main Thread
 		// A-Z까지 출력
-		Thread thread = new DigitThread();
-		thread.setName("Digit Thread");
+		Thread thread = new DigitThread("Digit Thread");
+		
 		Thread thread2 = new Thread(new AlphabetThread());
 		thread2.setName("Alphabet Thread");
 		
