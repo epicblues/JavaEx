@@ -42,8 +42,8 @@ public class Client {
 					System.out.println("접속을 종료합니다.");
 					break;
 				}	
-				bw.write(message);
-				bw.newLine();
+				bw.write(message + "\r\n");
+				
 				bw.flush();
 				System.out.println("서버로 전송한 메시지 " + message);
 				String echoMsg = br.readLine(); // 한 줄 읽기.
