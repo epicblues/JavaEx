@@ -20,9 +20,12 @@ public class MainThread {
 		
 		thread.start();
 		thread2.start();
-
+		
+		
 		// MainThread의 흐름에 WorkingThread들의 흐름을 합류.
 		try {
+			Thread.sleep(1000);
+			System.out.println(thread.getState());
 			thread.join();
 			thread2.join();
 		} catch (InterruptedException e) {
