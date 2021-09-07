@@ -45,8 +45,8 @@ public class MongodbTest {
 //			// TODO Auto-generated catch block
 //			e.printStackTrace();
 //		}
-		testFindAll();
-//		testFindFilter();
+//		testFindAll();
+		testFindFilter();
 //		testDeleteAll();
 	}
 	
